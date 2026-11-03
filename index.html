@@ -236,10 +236,8 @@
             
             <!-- Cover Art & Meta -->
             <div class="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
-                <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-800 flex flex-col items-center justify-center text-white shadow-md overflow-hidden group flex-shrink-0">
-                    <span class="material-symbols-outlined text-6xl opacity-80 group-hover:scale-110 transition-transform">album</span>
-                    <span class="absolute bottom-2 text-[10px] uppercase font-bold tracking-widest bg-black/40 px-2 py-0.5 rounded-full backdrop-blur-xs">MAT4X</span>
-                </div>
+                <!-- Remplace la div du gradient par ceci : -->
+<img src="https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.jpg" alt="Expensive Vanilla Cover" class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md flex-shrink-0">
                 <div class="text-center sm:text-left space-y-2">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-m3-full text-xs font-semibold bg-md-secondary-container text-md-on-secondary-container">
                         Sad R&B / Melancholic R&B
@@ -261,7 +259,7 @@
                 
                 <!-- Player Controls -->
                 <div class="flex items-center gap-4">
-                    <button id="mainPlayBtn" onclick="togglePlay('expensive_vanilla')" class="w-14 h-14 rounded-m3-full bg-md-primary text-white flex items-center justify-center hover:scale-105 transition-transform shadow-md focus:outline-none">
+                    <button id="mainPlayBtn" onclick="togglePlay('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a')" class="w-14 h-14 rounded-m3-full bg-md-primary text-white flex items-center justify-center hover:scale-105 transition-transform shadow-md focus:outline-none">
                         <span id="mainPlayIcon" class="material-symbols-outlined text-3xl">play_arrow</span>
                     </button>
 
@@ -282,11 +280,11 @@
 
                 <!-- Download Options Pill Buttons -->
                 <div class="pt-2 border-t border-md-surface-container-highest flex flex-col sm:flex-row gap-3">
-                    <a href="#" onclick="downloadFile('Expensive_Vanilla.mp3', 'MP3'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-primary text-md-on-primary rounded-m3-full font-medium text-sm">
+                    <a href="#" onclick="downloadFile('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3', 'MP3'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-primary text-md-on-primary rounded-m3-full font-medium text-sm">
                         <span class="material-symbols-outlined text-lg">download</span>
                         <span>Download MP3</span>
                     </a>
-                    <a href="#" onclick="downloadFile('Expensive_Vanilla.m4a', 'M4A'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-secondary-container text-md-on-secondary-container rounded-m3-full font-medium text-sm">
+                    <a href="#" onclick="downloadFile('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a', 'M4A'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-secondary-container text-md-on-secondary-container rounded-m3-full font-medium text-sm">
                         <span class="material-symbols-outlined text-lg">download</span>
                         <span>Download M4A</span>
                     </a>
