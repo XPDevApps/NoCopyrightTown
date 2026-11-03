@@ -55,7 +55,6 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* Material You Ripple & Focus state transitions */
         .m3-btn {
             position: relative;
             overflow: hidden;
@@ -69,7 +68,6 @@
             transform: translateY(0);
         }
 
-        /* Custom Audio Progress Bar Styling */
         input[type=range] {
             -webkit-appearance: none;
             background: transparent;
@@ -99,13 +97,11 @@
             transform: scale(1.2);
         }
 
-        /* Active chip style */
         .chip-active {
             background-color: #00639b !important;
             color: #ffffff !important;
         }
 
-        /* Material scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -128,7 +124,6 @@
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-md-surface-container-highest/60 px-4 lg:px-8 py-3">
         <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
             
-            <!-- Logo & Badge -->
             <div class="flex items-center gap-3">
                 <a href="#" class="flex items-center gap-2 group">
                     <div class="w-10 h-10 rounded-m3-xl bg-md-primary flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
@@ -142,7 +137,6 @@
                 </span>
             </div>
 
-            <!-- Header Search Bar -->
             <div class="flex-1 max-w-md hidden md:block">
                 <div class="relative flex items-center w-full">
                     <span class="material-symbols-outlined absolute left-3.5 text-md-on-surface-variant pointer-events-none">search</span>
@@ -156,7 +150,6 @@
                 </div>
             </div>
 
-            <!-- Action Button -->
             <div class="flex items-center gap-2">
                 <a href="#featured" class="m3-btn inline-flex items-center gap-2 px-5 py-2.5 bg-md-primary text-md-on-primary rounded-m3-full text-sm font-medium">
                     <span class="material-symbols-outlined text-lg">electric_bolt</span>
@@ -179,7 +172,6 @@
                 Download high-quality tracks in MP3 & M4A formats without copyright strikes. Safe for YouTube, Twitch, TikTok, CapCut, and commercial use.
             </p>
 
-            <!-- Main Interactive Search -->
             <div class="pt-2 max-w-2xl mx-auto">
                 <div class="relative flex items-center shadow-sm rounded-m3-full">
                     <span class="material-symbols-outlined absolute left-4 text-md-primary text-2xl">search</span>
@@ -196,7 +188,6 @@
                 </div>
             </div>
 
-            <!-- Quick Category Chips -->
             <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
                 <span class="text-xs font-medium text-md-on-surface-variant mr-1">Quick Filters:</span>
                 <button onclick="filterGenre('All')" class="genre-chip chip-active px-4 py-1.5 rounded-m3-full text-sm font-medium bg-md-surface-variant text-md-on-surface-variant hover:bg-md-surface-container-high transition-colors">
@@ -221,7 +212,7 @@
         </div>
     </section>
 
-    <!-- FEATURED TRACK SECTION (Expensive Vanilla) -->
+    <!-- FEATURED TRACK SECTION -->
     <section id="featured" class="px-4 lg:px-8 py-8 max-w-7xl mx-auto w-full">
         <div class="flex items-center justify-between mb-4">
             <h2 class="text-xl font-bold text-md-on-surface flex items-center gap-2">
@@ -231,13 +222,10 @@
             <span class="text-xs text-md-on-surface-variant font-medium uppercase tracking-wider">Editor's Pick</span>
         </div>
 
-        <!-- Material You Hero Card -->
         <div class="bg-md-surface-variant rounded-m3-xl p-6 md:p-8 border border-md-surface-container-highest flex flex-col lg:flex-row gap-8 items-center justify-between shadow-sm">
             
-            <!-- Cover Art & Meta -->
             <div class="flex flex-col sm:flex-row items-center gap-6 w-full lg:w-auto">
-                <!-- Remplace la div du gradient par ceci : -->
-<img src="https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.jpg" alt="Expensive Vanilla Cover" class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md flex-shrink-0">
+                <img src="https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.jpg" alt="Expensive Vanilla Cover" class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl object-cover shadow-md flex-shrink-0" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80'">
                 <div class="text-center sm:text-left space-y-2">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-m3-full text-xs font-semibold bg-md-secondary-container text-md-on-secondary-container">
                         Sad R&B / Melancholic R&B
@@ -254,12 +242,10 @@
                 </div>
             </div>
 
-            <!-- Interactive Audio Player & Direct Downloads -->
             <div class="w-full lg:w-1/2 bg-white rounded-2xl p-5 border border-md-surface-container-highest shadow-sm space-y-4">
                 
-                <!-- Player Controls -->
                 <div class="flex items-center gap-4">
-                    <button id="mainPlayBtn" onclick="togglePlay('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a')" class="w-14 h-14 rounded-m3-full bg-md-primary text-white flex items-center justify-center hover:scale-105 transition-transform shadow-md focus:outline-none">
+                    <button id="mainPlayBtn" onclick="togglePlay('expensive_vanilla')" class="w-14 h-14 rounded-m3-full bg-md-primary text-white flex items-center justify-center hover:scale-105 transition-transform shadow-md focus:outline-none">
                         <span id="mainPlayIcon" class="material-symbols-outlined text-3xl">play_arrow</span>
                     </button>
 
@@ -271,26 +257,23 @@
                         <input type="range" id="seekSlider" value="0" max="100" class="w-full" oninput="seekAudio(this.value)">
                     </div>
 
-                    <!-- Volume Control -->
                     <div class="hidden sm:flex items-center gap-1 text-md-on-surface-variant">
                         <span class="material-symbols-outlined text-xl">volume_up</span>
                         <input type="range" id="volumeSlider" value="80" max="100" class="w-16" oninput="setVolume(this.value)">
                     </div>
                 </div>
 
-                <!-- Download Options Pill Buttons -->
                 <div class="pt-2 border-t border-md-surface-container-highest flex flex-col sm:flex-row gap-3">
-                    <a href="#" onclick="downloadFile('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3', 'MP3'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-primary text-md-on-primary rounded-m3-full font-medium text-sm">
+                    <a href="https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3" download class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-primary text-md-on-primary rounded-m3-full font-medium text-sm">
                         <span class="material-symbols-outlined text-lg">download</span>
                         <span>Download MP3</span>
                     </a>
-                    <a href="#" onclick="downloadFile('https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a', 'M4A'); return false;" class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-secondary-container text-md-on-secondary-container rounded-m3-full font-medium text-sm">
+                    <a href="https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a" download class="m3-btn flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 bg-md-secondary-container text-md-on-secondary-container rounded-m3-full font-medium text-sm">
                         <span class="material-symbols-outlined text-lg">download</span>
                         <span>Download M4A</span>
                     </a>
                 </div>
 
-                <!-- Usage Clearance Note -->
                 <div class="text-center sm:text-left text-[11px] text-md-outline flex items-center justify-center sm:justify-start gap-1">
                     <span class="material-symbols-outlined text-xs text-green-600">check_circle</span>
                     <span>Free to use in YouTube videos & Twitch streams. No copyright claim guarantee.</span>
@@ -302,7 +285,6 @@
     <!-- MUSIC CATALOG / TRACK GRID -->
     <main class="px-4 lg:px-8 py-8 max-w-7xl mx-auto w-full flex-1">
         
-        <!-- Grid Header & Filters -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
                 <h2 class="text-2xl font-bold text-md-on-surface">Explore All Tracks</h2>
@@ -319,19 +301,15 @@
             </div>
         </div>
 
-        <!-- Track Cards Grid -->
-        <div id="tracksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Dynamic JS injected track cards will load here -->
-        </div>
+        <div id="tracksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
-        <!-- Empty State Message -->
         <div id="noResults" class="hidden text-center py-16 space-y-3 bg-md-surface-variant rounded-m3-xl my-4">
             <span class="material-symbols-outlined text-5xl text-md-outline">search_off</span>
             <h3 class="text-lg font-bold text-md-on-surface">No tracks found</h3>
             <p class="text-sm text-md-on-surface-variant">Try searching for another keyword or reset filters.</p>
             <button onclick="filterGenre('All')" class="m3-btn px-6 py-2 bg-md-primary text-white rounded-m3-full text-sm font-medium mt-2">Reset Filters</button>
         </div>
-    </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="mt-auto border-t border-md-surface-container-highest bg-md-surface-variant py-12 px-4 lg:px-8">
@@ -347,11 +325,6 @@
                 <p class="text-sm text-md-on-surface-variant max-w-sm">
                     Providing creators, streamers, and filmmakers with high-quality, 100% royalty-free background music for free.
                 </p>
-                <div class="flex gap-2 pt-2">
-                    <span class="px-3 py-1 bg-white border border-md-outline-variant text-md-on-surface text-xs rounded-m3-full font-medium">YouTube Safe</span>
-                    <span class="px-3 py-1 bg-white border border-md-outline-variant text-md-on-surface text-xs rounded-m3-full font-medium">Twitch Ready</span>
-                    <span class="px-3 py-1 bg-white border border-md-outline-variant text-md-on-surface text-xs rounded-m3-full font-medium">TikTok Allowed</span>
-                </div>
             </div>
 
             <div>
@@ -360,17 +333,13 @@
                     <li><a href="#" onclick="filterGenre('Sad R&B'); return false;" class="hover:text-md-primary transition-colors">Sad R&B</a></li>
                     <li><a href="#" onclick="filterGenre('EDM'); return false;" class="hover:text-md-primary transition-colors">EDM</a></li>
                     <li><a href="#" onclick="filterGenre('Hardstyle'); return false;" class="hover:text-md-primary transition-colors">Hardstyle</a></li>
-                    <li><a href="#" onclick="filterGenre('Phonk'); return false;" class="hover:text-md-primary transition-colors">Phonk</a></li>
-                    <li><a href="#" onclick="filterGenre('Lo-Fi'); return false;" class="hover:text-md-primary transition-colors">Lo-Fi Chill</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-sm font-bold text-md-on-surface mb-3 uppercase tracking-wider">License & Terms</h4>
+                <h4 class="text-sm font-bold text-md-on-surface mb-3 uppercase tracking-wider">License</h4>
                 <ul class="space-y-2 text-sm text-md-on-surface-variant">
                     <li><a href="#" class="hover:text-md-primary transition-colors">Free Commercial License</a></li>
-                    <li><a href="#" class="hover:text-md-primary transition-colors">How to Credit</a></li>
-                    <li><a href="#" class="hover:text-md-primary transition-colors">Content ID Policy</a></li>
                     <li><a href="#" class="hover:text-md-primary transition-colors">Contact Support</a></li>
                 </ul>
             </div>
@@ -382,12 +351,11 @@
         </div>
     </footer>
 
-    <!-- Audio Element for Featured & Grid Playback -->
+    <!-- Audio Element -->
     <audio id="globalAudioPlayer" preload="none"></audio>
 
     <!-- INTERACTIVE JAVASCRIPT LOGIC -->
     <script>
-        // Track Database Catalog
         const catalog = [
             {
                 id: 'expensive_vanilla',
@@ -398,8 +366,7 @@
                 bpm: 150,
                 duration: '2:45',
                 gradient: 'from-blue-600 to-indigo-900',
-                audioSrc: 'Expensive_Vanilla.mp3',
-                downloads: { mp3: 'Expensive_Vanilla.mp3', m4a: 'Expensive_Vanilla.m4a' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 100,
                 date: '2026-03-01'
             },
@@ -412,8 +379,7 @@
                 bpm: 85,
                 duration: '2:15',
                 gradient: 'from-purple-700 to-slate-900',
-                audioSrc: 'https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3',
-                downloads: { mp3: '#', m4a: '#' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3', // Remplacer par ton lien réel si besoin
                 popular: 85,
                 date: '2026-02-15'
             },
@@ -426,8 +392,7 @@
                 bpm: 128,
                 duration: '3:10',
                 gradient: 'from-teal-500 to-emerald-800',
-                audioSrc: 'https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a7320b.mp3',
-                downloads: { mp3: '#', m4a: '#' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 92,
                 date: '2026-02-28'
             },
@@ -440,8 +405,7 @@
                 bpm: 155,
                 duration: '3:22',
                 gradient: 'from-red-600 to-orange-800',
-                audioSrc: 'https://cdn.pixabay.com/download/audio/2022/10/14/audio_9939f60a92.mp3',
-                downloads: { mp3: '#', m4a: '#' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 78,
                 date: '2026-01-20'
             },
@@ -454,8 +418,7 @@
                 bpm: 160,
                 duration: '2:05',
                 gradient: 'from-zinc-800 to-red-950',
-                audioSrc: 'https://cdn.pixabay.com/download/audio/2022/11/06/audio_2c9a918f6d.mp3',
-                downloads: { mp3: '#', m4a: '#' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 95,
                 date: '2026-02-10'
             },
@@ -468,8 +431,7 @@
                 bpm: 75,
                 duration: '2:30',
                 gradient: 'from-amber-600 to-stone-800',
-                audioSrc: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0a13f69d2.mp3',
-                downloads: { mp3: '#', m4a: '#' },
+                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 88,
                 date: '2026-01-05'
             }
@@ -487,13 +449,11 @@
         const durationEl = document.getElementById('duration');
         const seekSlider = document.getElementById('seekSlider');
 
-        // Initialize Page
         window.addEventListener('DOMContentLoaded', () => {
             renderCatalog(catalog);
             setupAudioEvents();
         });
 
-        // Render Tracks Grid
         function renderCatalog(tracks) {
             const grid = document.getElementById('tracksGrid');
             const noResults = document.getElementById('noResults');
@@ -518,7 +478,6 @@
                 
                 card.innerHTML = `
                     <div class="space-y-4">
-                        <!-- Card Top: Cover + Play Button -->
                         <div class="relative h-44 rounded-2xl bg-gradient-to-br ${track.gradient} flex items-center justify-center text-white shadow-inner overflow-hidden group">
                             <span class="material-symbols-outlined text-6xl opacity-75 group-hover:scale-110 transition-transform">music_note</span>
                             <button onclick="togglePlay('${track.id}')" class="absolute inset-0 m-auto w-14 h-14 rounded-m3-full bg-white/90 text-md-primary flex items-center justify-center opacity-90 hover:opacity-100 hover:scale-110 transition-all shadow-md">
@@ -529,7 +488,6 @@
                             </span>
                         </div>
 
-                        <!-- Metadata -->
                         <div>
                             <div class="flex justify-between items-start gap-2">
                                 <div>
@@ -544,25 +502,21 @@
                         </div>
                     </div>
 
-                    <!-- Actions: Dual Download Pill Buttons -->
                     <div class="pt-4 mt-4 border-t border-md-surface-container-highest/80 flex items-center gap-2">
-                        <button onclick="downloadFile('${track.title}.mp3', 'MP3')" class="m3-btn flex-1 py-2 px-3 bg-white text-md-primary border border-md-outline-variant/60 rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
+                        <a href="${track.audioSrc}" download class="m3-btn flex-1 py-2 px-3 bg-white text-md-primary border border-md-outline-variant/60 rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
                             <span class="material-symbols-outlined text-base">download</span> MP3
-                        </button>
-                        <button onclick="downloadFile('${track.title}.m4a', 'M4A')" class="m3-btn flex-1 py-2 px-3 bg-md-primary text-white rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
+                        </a>
+                        <a href="${track.audioSrc.replace('.mp3', '.m4a')}" download class="m3-btn flex-1 py-2 px-3 bg-md-primary text-white rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
                             <span class="material-symbols-outlined text-base">download</span> M4A
-                        </button>
+                        </a>
                     </div>
                 `;
                 grid.appendChild(card);
             });
         }
 
-        // Filtering logic by Genre
         function filterGenre(genre) {
             currentGenre = genre;
-            
-            // Update Chip UI
             document.querySelectorAll('.genre-chip').forEach(chip => {
                 if(chip.textContent.trim().toLowerCase() === genre.toLowerCase() || (genre === 'All' && chip.textContent.trim() === 'All Tracks')) {
                     chip.classList.add('chip-active');
@@ -570,11 +524,9 @@
                     chip.classList.remove('chip-active');
                 }
             });
-
             applyCombinedFilters();
         }
 
-        // Search Handlers
         function handleSearch(val) {
             currentSearchQuery = val.toLowerCase().trim();
             applyCombinedFilters();
@@ -613,7 +565,6 @@
             renderCatalog(sorted);
         }
 
-        // Audio Player Controls
         function togglePlay(trackId) {
             const selectedTrack = catalog.find(t => t.id === trackId);
             if (!selectedTrack) return;
@@ -623,15 +574,13 @@
                     audioPlayer.pause();
                     isPlaying = false;
                 } else {
-                    audioPlayer.play();
+                    audioPlayer.play().catch(() => {});
                     isPlaying = true;
                 }
             } else {
                 activeTrackId = trackId;
                 audioPlayer.src = selectedTrack.audioSrc;
-                audioPlayer.play().catch(e => {
-                    console.log("Audio play simulated for preview mode.");
-                });
+                audioPlayer.play().catch(() => {});
                 isPlaying = true;
             }
 
@@ -639,14 +588,12 @@
         }
 
         function updatePlayerUI() {
-            // Update Main Featured Card Play Icon
             if (activeTrackId === 'expensive_vanilla' || !activeTrackId) {
                 mainPlayIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
             } else {
                 mainPlayIcon.textContent = 'play_arrow';
             }
 
-            // Update all catalog cards
             catalog.forEach(track => {
                 const iconEl = document.getElementById(`icon-${track.id}`);
                 if (iconEl) {
@@ -689,19 +636,6 @@
             const min = Math.floor(seconds / 60);
             const sec = Math.floor(seconds % 60);
             return `${min}:${sec < 10 ? '0' : ''}${sec}`;
-        }
-
-        // Download trigger simulation
-        function downloadFile(fileName, format) {
-            // Simple user notification simulation
-            const toast = document.createElement('div');
-            toast.className = 'fixed bottom-6 right-6 z-50 bg-md-on-surface text-white px-6 py-3 rounded-m3-full shadow-lg flex items-center gap-2 text-sm animate-bounce';
-            toast.innerHTML = `<span class="material-symbols-outlined text-green-400">download_done</span> Starting ${format} download for "${fileName}"...`;
-            document.body.appendChild(toast);
-            
-            setTimeout(() => {
-                toast.remove();
-            }, 3500);
         }
     </script>
 </body>
