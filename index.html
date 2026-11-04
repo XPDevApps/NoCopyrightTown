@@ -364,22 +364,24 @@
                 genre: 'Sad R&B',
                 style: 'Sad R&B / Melancholic R&B',
                 bpm: 150,
-                duration: '2:45',
+                duration: '2:54',
                 imageSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.jpg',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a', // Lu par défaut & Téléchargeable M4A
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3', // Téléchargeable MP3
                 popular: 100,
-                date: '2026-11-04'
+                date: '2026-11-03'
             },
             {
-                id: 'bound_to_the_earth',
-                title: 'Bound to the Earth',
-                artist: 'NoCopyrightTown',
-                genre: 'Folk/Rock',
-                style: 'Folk Rock / Pop-Folk',
+                id: 'midnight_vibes',
+                title: 'NoCopyrightTown',
+                artist: 'MAT4X',
+                genre: 'Sad R&B',
+                style: 'Melancholic R&B / Slow Jam',
                 bpm: 85,
                 duration: '3:00',
                 imageSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Bound%20to%20the%20Earth.jpg',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Bound%20to%20the%20Earth.m4a',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Bound%20to%20the%20Earth.m4a',
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Bound%20to%20the%20Earth.mp3',
                 popular: 85,
                 date: '2026-11-04'
             },
@@ -392,7 +394,8 @@
                 bpm: 128,
                 duration: '3:10',
                 imageSrc: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=400&q=80',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a',
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 92,
                 date: '2026-02-28'
             },
@@ -405,7 +408,8 @@
                 bpm: 155,
                 duration: '3:22',
                 imageSrc: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a',
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 78,
                 date: '2026-01-20'
             },
@@ -416,9 +420,10 @@
                 genre: 'Phonk',
                 style: 'Drift Phonk / Aggressive',
                 bpm: 160,
-                duration: '2:05',
+                    duration: '2:05',
                 imageSrc: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=400&q=80',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a',
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 95,
                 date: '2026-02-10'
             },
@@ -431,7 +436,8 @@
                 bpm: 75,
                 duration: '2:30',
                 imageSrc: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=400&q=80',
-                audioSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.m4a',
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Expensive%20Vanilla.mp3',
                 popular: 88,
                 date: '2026-01-05'
             }
@@ -504,10 +510,12 @@
                     </div>
 
                     <div class="pt-4 mt-4 border-t border-md-surface-container-highest/80 flex items-center gap-2">
-                        <a href="${track.audioSrc}" download class="m3-btn flex-1 py-2 px-3 bg-white text-md-primary border border-md-outline-variant/60 rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
+                        <!-- Bouton Téléchargement MP3 -->
+                        <a href="${track.mp3Src}" download class="m3-btn flex-1 py-2 px-3 bg-white text-md-primary border border-md-outline-variant/60 rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
                             <span class="material-symbols-outlined text-base">download</span> MP3
                         </a>
-                        <a href="${track.audioSrc.replace('.mp3', '.m4a')}" download class="m3-btn flex-1 py-2 px-3 bg-md-primary text-white rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
+                        <!-- Bouton Téléchargement M4A -->
+                        <a href="${track.m4aSrc}" download class="m3-btn flex-1 py-2 px-3 bg-md-primary text-white rounded-m3-full text-xs font-medium flex items-center justify-center gap-1">
                             <span class="material-symbols-outlined text-base">download</span> M4A
                         </a>
                     </div>
@@ -580,7 +588,8 @@
                 }
             } else {
                 activeTrackId = trackId;
-                audioPlayer.src = selectedTrack.audioSrc;
+                // Force le lecteur à lire spécifiquement la source M4A pour la lecture en ligne
+                audioPlayer.src = selectedTrack.m4aSrc;
                 audioPlayer.play().catch(() => {});
                 isPlaying = true;
             }
