@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -445,11 +446,27 @@
                 popular: 88,
                 date: '2026-11-17',
                 isComingSoon: false
+            },
+            // === NOUVELLE CASE LIBÉRÉE À REMPLIR ===
+            {
+                id: 'chateaux_sur_le_sable',
+                title: 'Châteaux sur le sable',
+                artist: 'NoCopyrightTown',
+                genre: 'French Pop',
+                style: 'French Music/French Pop',
+                bpm: 120,
+                duration: '2:47',
+                imageSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Ch%C3%A2teaux%20sur%20le%20sable.jpg', // <-- Lien image (.jpg)
+                m4aSrc: 'https://xpdevapps.github.io/NoCopyrightTown/Ch%C3%A2teaux%20sur%20le%20sable.m4a'
+                mp3Src: 'https://xpdevapps.github.io/NoCopyrightTown/Ch%C3%A2teaux%20sur%20le%20sable.mp3'
+                popular: 90,
+                date: '2026-11-18',
+                isComingSoon: false
             }
         ];
 
-        // Génération automatique des 50 pistes "Coming Soon"
-        for (let i = 1; i <= 50; i++) {
+        // Génération automatique des 17 pistes "Coming Soon"
+        for (let i = 1; i <= 17; i++) {
             catalog.push({
                 id: `coming_soon_${i}`,
                 title: `Coming Soon #${i}`,
